@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>teht 8-11</title>
+    <style>
+
+    </style>
+</head>
+<table>
+    <form action="http://codez.savonia.fi/jussi/api/test.php" method="get">
+        <tr>
+            <td><label for="Oppilaitos">Oppilaitos: </label></td>
+            <td><input type="text" name="oppilaitos" id="oppilaitos" value="Savonia AMK" readonly></td>
+        <tr>
+            <td><label for="nimi">Nimi: </label></td>
+            <td><input type="text" name="nimi" id="nimi" required></td>
+        </tr>
+        <tr>
+            <td><label for="Vuosikurssi">Vuosikurssi:</label></td>
+            <td><input type="password" name="vuosikurssi" id="vuosikurssi" required></td>
+        </tr>
+        <tr>
+            <td><label for="course">Kurssin nimi: </label></td>
+            <td><select id="course" name="course[]" size="5" multiple>
+                    <optgroup label="Tietojenkäsittely">
+                        <option value="matematiikka" name="course[]">Matematiikka</option>
+                        <option value="fysiikka" name="course[]">Fysiikka</option>
+                        <option value="kemia" name="course[]">Kemia</option>
+                        <option value="tietorakenteet" name="course[]">Tietorakenteet</option>
+                        <option value="webohjelmointi" name="course[]">Webohjelmointi</option>
+                    </optgroup>
+                    <optgroup label="Yleisopinnot">
+                        <option value="taloustiede" name="course[]">Taloustiede</option>
+                        <option value="markkinointi" name="course[]">Markkinointi</option>
+                        <option value="johtaminen" name="course[]">Johtaminen</option>
+                    </optgroup>
+                </select></td>
+        </tr>
+        <tr>
+            <td><label for="type">Kurssin tyyppi:</label></td>
+            <td><select id="type" name="tyyppi">
+                    <option value="Lahiopetus">Lahiopetus</option>
+                    <option value="Online">Online</option>
+                    <option value="Virtual">Virtual</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td><label for="sukupuoli">Sukupuoli</label><br></td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="mies" name="sukupuoli" value="Mies"></td>
+            <td> <label for="mies">Mies</label></td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="nainen" name="sukupuoli" value="Nainen"></td>
+            <td> <label for="nainen">Nainen</label></td>
+        </tr>
+        <tr>
+            <td> <input type="radio" id="muu" name="sukupuoli" value="Muu"></td>
+            <td> <label for="muu">Muu</label></td>
+        </tr>
+        <tr>
+            <td> <label for="harrastukset">Harrastukset:</label></td>
+        </tr>
+        <tr> </tr>
+        <td><input type="checkbox" id="harrastukset" name="hobbies[]" value="Pelaaminen"></td>
+        <td><label for="harrastukset">Pelaaminen</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="harrastukset" name="hobbies[]" value="Lenkkeily"></td>
+            <td><label for="harrastukset">Lenkkeily</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="harrastukset" name="hobbies[]" value="Kuntosali"></td>
+            <td> <label for="harrastukset">Kuntosali</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="harrastukset" name="hobbies[]" value="Lukeminen"></td>
+            <td><label for="harrastukset">Lukeminen</label></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="reset" value="Tyhjennä"></input></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Lähetä"></input></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="image" src="karhu.png" alt="Submit"></input></td>
+        </tr>
+
+
+
+    </form>
+</table>
+
+<body>
+
+
+
+</body>
+
+</html>
